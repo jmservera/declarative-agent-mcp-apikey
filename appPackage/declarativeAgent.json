@@ -1,0 +1,23 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.5/schema.json",
+    "version": "v1.5",
+    "name": "context7${{APP_NAME_SUFFIX}}",
+    "description": "Declarative agent created with Microsoft 365 Agents Toolkit can assist user in calling MCP Servers",
+    "instructions": "$[file('instruction.txt')]",
+    "conversation_starters": [
+        {
+			"title": "JWT validation middleware in Next.js",
+			"text": "Create a Next.js middleware that checks for a valid JWT in cookies and redirects unauthenticated users to `/login`. use context7"
+		},
+        {
+            "text": "Configure a Cloudflare Worker script to cache JSON API responses for five minutes. use context7",
+            "title": "Cloudflare Worker caching"
+        }
+    ],
+    "actions": [
+        {
+            "id": "action_1",
+            "file": "ai-plugin.json"
+        }
+    ]
+}
